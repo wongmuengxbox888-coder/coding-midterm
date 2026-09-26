@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register B&NEWS page</title>
+  <link rel="stylesheet" href="style/register.css">
+</head>
+<body>
+  <header class="nav">
+  <div class="wrap nav__in">
+    <img class="logo"src="image/image 3.png" alt="">
+
+    
+    <nav class="nav__links" aria-label="เมนูหลัก">
+      <ul>
+        <li><a class="Contract" href="#">Home</a></li>
+
+        <li class="dd">
+          <button class="dd__btn" type="button" >News</button>
+          <ul class="dd__menu">
+            <li><a href="#">ข่าวด่วน</a></li>
+            <li><a href="#">การเมือง</a></li>
+            <li><a href="#">เศรษฐกิจ</a></li>
+            <li><a href="#">ต่างประเทศ</a></li>
+          </ul>
+        </li>
+
+        <li class="dd">
+          <button class="dd__btn" type="button" >Sports</button>
+          <ul class="dd__menu">
+            <li><a href="football.html">ฟุตบอล</a></li>
+            <li><a href="#">มวย</a></li>
+            <li><a href="#">เทนนิส</a></li>
+            <li><a href="#">กีฬาอื่นๆ</a></li>
+          </ul>
+        </li>
+
+        <li class="dd">
+          <button class="dd__btn" type="button">Teachnology</button>
+          <ul class="dd__menu">
+            <li><a href="#">มือถือ & แก็ดเจ็ต</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">เกม</a></li>
+            <li><a href="#">ยานยนต์</a></li>
+          </ul>
+        </li>
+
+        <li class="dd">
+          <button class="dd__btn" type="button">Variety</button>
+          <ul class="dd__menu">
+            <li><a href="#">อาหาร</a></li>
+            <li><a href="#">ท่องเที่ยว</a></li>
+            <li><a href="#">บันเทิง</a></li>
+            <li><a href="#">ไลฟ์สไตล์</a></li>
+          </ul>
+        </li>
+
+        <li><a class="Contract" href="#">Contract</a></li>
+      </ul>
+    </nav>
+
+    <input class="search" type="search" placeholder="Search something . . . ." aria-label="ค้นหา">
+    <img class="bell" src="https://img.icons8.com/?size=100&id=84025&format=png&color=FFFFFF" alt="">
+
+    <a href="register.html" class="login">Register</a>
+
+    <label class="burger"></label>
+
+  </div>
+</header>
+<section class="register-page">
+  <div class="register-overlay"></div>
+
+  <div class="register-box">
+    <img  src="image/image 3.png" alt="">
+    <h1 class="register-title">สมัครสมาชิก</h1>
+    <p class="register-sub">สร้างบัญชีเพื่อติดตามข่าวสารและร่วมแสดงความคิดเห็น</p>
+
+    <form class="register-form">
+      <div class="field">
+        <label for="fullname">ชื่อ-นามสกุล</label>
+        <input type=text" id="fullname" placeholder="กรอกชื่อ-นามสกุล" required>
+      </div>
+
+      <div class="field">
+        <label for="email">อีเมล</label>
+        <input type="email" id="email" placeholder="you@example.com" >
+      </div>
+
+      <div class="field">
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" id="password" placeholder="อย่างน้อย 8 ตัวอักษร" >
+      </div>
+
+      <div class="field">
+        <label for="confirm">ยืนยันรหัสผ่าน</label>
+        <input type="password" id="confirm" placeholder="กรอกรหัสผ่านอีกครั้ง" >
+      </div>
+
+      <label class="checkbox">
+        <input type="checkbox" required>
+        <span>ฉันยอมรับ <a href="#">ข้อกำหนดการใช้งาน</a> และ <a href="#">นโยบายความเป็นส่วนตัว</a></span>
+      </label>
+
+      <a href="index.html" class="register-btn">สมัครสมาชิค</a>
+    </form>
+
+    <p class="register-footer">มีบัญชีอยู่แล้ว? <a href="#">เข้าสู่ระบบ</a></p>
+  </div>
+</section>
+</body>
+</html>
