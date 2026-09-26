@@ -67,9 +67,43 @@
 
     <input class="search" type="search" placeholder="Search something . . . ." aria-label="ค้นหา">
     <img class="bell" src="https://img.icons8.com/?size=100&id=84025&format=png&color=FFFFFF" alt="">
+    <!-- ปุ่มเปิด -->
+<button type="button" class="open-subscribe-btn" id="openSubscribe">รับข่าวสารผ่านอีเมล</button>
+
+<!-- ลอย -->
+<div class="subscribe-overlay" id="subscribeOverlay">
+  <div class="subscribe-box">
+    <button type="button" class="subscribe-close" id="closeSubscribe" aria-label="ปิด">&times;</button>
+    <img src="image/image 62.png" alt="" class="send-mail">
+    <h2 class="subscribe-title">รับข่าวสารผ่านอีเมล</h2>
+    <p class="subscribe-sub">สมัครรับข่าวสารล่าสุดที่คุณสนใจ ส่งตรงถึงอีเมลของคุณ</p>
+
+    <form class="subscribe-form">
+      <div class="field">
+        <label for="sub-email">อีเมล</label>
+        <input type="email" id="sub-email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="field">
+        <label for="sub-topic">หัวข้อข่าวที่สนใจ</label>
+        <select id="sub-topic" required> 
+          <option value=""disable>เลือกหัวข้อข่าว</option>
+          <option value="sports">กีฬา</option>
+          <option value="news">ข่าวด่วน</option>
+          <option value="technology">เทคโนโลยี</option>
+          <option value="variety">ไลฟ์สไตล์</option>
+          <option value="business">ธุรกิจ</option>
+        </select>
+      </div>
+
+      <button type="submit" class="subscribe-btn">ส่งข้อมูล</button>
+    </form>
+  </div>
+</div>
     <img class="log"src="image/siralex.webp" alt="" >
     <label class="burger"></label>
   </div>
+  
 </header>
 
   
@@ -86,7 +120,7 @@
 
     <section class="top">
 
-      <!-- main news  -->
+      
       <article class="bcard" style="background-image: url(https://i2-prod.manchestereveningnews.co.uk/article33756686.ece/ALTERNATES/s1200f/0_GettyImages-2266204165.jpg);">
         <div class="bcard-content">
           <span class="tag">SPORTS</span>
@@ -190,7 +224,7 @@
         </p>
         <p class="quote__by">By Michael Carrick</p>
       </div>
-      <a class="btn" href="#">อ่านกระทู้ได้ที่นี่</a>
+      <a class="btn" href="kratoo.html">อ่านกระทู้ได้ที่นี่</a>
     </aside>
 
     <div class="share">

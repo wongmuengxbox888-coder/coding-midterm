@@ -1309,3 +1309,158 @@ button {
   width: 22px;
   height: 20px;
 }
+
+/* ส่วนเสริม ของ send email  */
+.open-subscribe-btn {
+  height: 40px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 50px;
+  background: #0f3a80;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .15s;
+}
+
+.open-subscribe-btn:hover {
+  background: #14509e;
+}
+
+/* ปิดก่อน  */
+.subscribe-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(5, 13, 30, .6);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s;
+}
+.sub-topic{
+  font-size:20px
+
+}
+.subscribe-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.subscribe-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 34px 30px 28px;
+  border-radius: 20px;
+
+  background: rgba(14, 39, 72, .55);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+  color: #fff;
+
+  transform: translateY(16px);
+  transition: transform .2s;
+}
+
+.subscribe-overlay.active .subscribe-box {
+  transform: translateY(0);
+}
+
+.subscribe-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.subscribe-close:hover { opacity: 1; }
+
+.subscribe-title {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subscribe-sub {
+  margin: 0 0 24px;
+  font-size: 13px;
+  color: #c5cbe0;
+  text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subscribe-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.subscribe-form label {
+  font-size: 13px;
+  color: #dfe4f0;
+}
+
+.subscribe-form input,
+.subscribe-form select {
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.08);
+  color: white;
+  font: inherit;
+  font-size: 14px;
+  
+}
+
+.subscribe-form select {
+  cursor: pointer;
+  
+  
+}
+.subscribe-form input::placeholder {
+  color: #93a2c5;
+}
+
+.subscribe-form input:focus,
+.subscribe-form select:focus {
+  outline: none;
+  /* border-color: #fff; */
+  background: rgba(255,255,255,.14);
+}
+
+.subscribe-btn {
+  margin-top: 6px;
+  height: 46px;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+  color: #0a1a3f;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.subscribe-btn:hover {
+  background: #e6e9f2;
+}

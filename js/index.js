@@ -33,3 +33,12 @@ const points = document.querySelectorAll('#timelineTrack .timeline-point');
     });
   });
 
+
+// pop up ของส่งเมลลลลลลลลล
+const openBtn = document.getElementById('openSubscribe');
+  const closeBtn = document.getElementById('closeSubscribe');
+  const overlay = document.getElementById('subscribeOverlay');
+  openBtn.addEventListener('click', () => overlay.classList.add('active'));
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.classList.remove('active');
+  });
