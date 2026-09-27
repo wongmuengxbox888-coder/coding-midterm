@@ -508,23 +508,33 @@
 
     <ul class="sf-stats">
       <li class="sf-stat">
-        <span class="sf-circle" style="--pct:42"><span class="sf-pct">42%</span></span>
+        <span class="sf-circle" style="--pct:42; --color:#4ade80;">
+          <span class="sf-circle-inner"><span class="sf-pct">42%</span></span>
+        </span>
         <span class="sf-label">Excellent</span>
       </li>
       <li class="sf-stat">
-        <span class="sf-circle" style="--pct:24"><span class="sf-pct">24%</span></span>
+        <span class="sf-circle" style="--pct:24; --color:#60a5fa;">
+          <span class="sf-circle-inner"><span class="sf-pct">24%</span></span>
+        </span>
         <span class="sf-label">Good</span>
       </li>
       <li class="sf-stat">
-        <span class="sf-circle" style="--pct:18"><span class="sf-pct">18%</span></span>
+        <span class="sf-circle" style="--pct:18; --color:#facc15;">
+          <span class="sf-circle-inner"><span class="sf-pct">18%</span></span>
+        </span>
         <span class="sf-label">Normal</span>
       </li>
       <li class="sf-stat">
-        <span class="sf-circle" style="--pct:16"><span class="sf-pct">16%</span></span>
+        <span class="sf-circle" style="--pct:16; --color:#9ca3af;">
+          <span class="sf-circle-inner"><span class="sf-pct">16%</span></span>
+        </span>
         <span class="sf-label">ok</span>
       </li>
       <li class="sf-stat">
-        <span class="sf-circle" style="--pct:16"><span class="sf-pct">16%</span></span>
+        <span class="sf-circle" style="--pct:16; --color:#f87171;">
+          <span class="sf-circle-inner"><span class="sf-pct">16%</span></span>
+        </span>
         <span class="sf-label">Angry</span>
       </li>
     </ul>
@@ -534,10 +544,52 @@
 
   <div class="sf-right">
     <p class="sf-chart-caption">แนวโน้มความรู้สึกของแฟนบอล ต่อเนื่อง ย้อนหลัง 7 วันที่ผ่านมา</p>
-    <img
-      class="sf-chart-img"
-      src="https://quickchart.io/chart?bkg=transparent&c={type:'line',data:{labels:['1','2','3','4','5','6','7'],datasets:[{data:[3,7,2,8,4,9,6],borderColor:'%23e94e77',fill:false,pointRadius:0},{data:[5,2,6,3,7,4,8],borderColor:'%23f2a444',fill:false,pointRadius:0}]},options:{legend:{display:false},scales:{xAxes:[{display:false}],yAxes:[{display:false}]}}}"
-      alt="กราฟแนวโน้มความรู้สึกแฟนบอลย้อนหลัง 7 วัน">
+    <div class="sf-chart-wrap">
+      <canvas id="feelingChart"></canvas>
+    </div>
+    <div class="sf-chart-wrap">
+  <div class="css-chart">
+    <div class="css-chart-bar">
+      <span class="bar-seg bar-pos" style="--val:30"></span>
+      <span class="bar-seg bar-neg" style="--val:20"></span>
+      <label>จ</label>
+    </div>
+    <div class="css-chart-bar">
+      <span class="bar-seg bar-pos" style="--val:45"></span>
+      <span class="bar-seg bar-neg" style="--val:15"></span>
+      <label>อ</label>
+    </div>
+    <div class="css-chart-bar">
+      <span class="bar-seg bar-pos" style="--val:38"></span>
+      <span class="bar-seg bar-neg" style="--val:25"></span>
+      <label>พ</label>
+    </div>
+    <div class="css-chart-bar">
+      <span class="bar-seg bar-pos" style="--val:52"></span>
+      <span class="bar-seg bar-neg" style="--val:12"></span>
+      <label>พฤ</label>
+    </div>
+    <div class="css-chart-bar">
+      <span class="bar-seg bar-pos" style="--val:40"></span>
+      <span class="bar-seg bar-neg" style="--val:22"></span>
+      <label>ศ</label>
+    </div>
+    <div class="css-chart-bar">
+      <span class="bar-seg bar-pos" style="--val:58"></span>
+      <span class="bar-seg bar-neg" style="--val:10"></span>
+      <label>ส</label>
+    </div>
+    <div class="css-chart-bar">
+      <span class="bar-seg bar-pos" style="--val:50"></span>
+      <span class="bar-seg bar-neg" style="--val:18"></span>
+      <label>อา</label>
+    </div>
+  </div>
+</div>
+    <div class="sf-legend">
+      <span class="sf-legend-item"><i style="background:#f472b6;"></i>เชิงบวก</span>
+      <span class="sf-legend-item"><i style="background:#fb923c;"></i>เชิงลบ</span>
+    </div>
   </div>
 </section>
 <section class="reviews-section">
@@ -689,6 +741,7 @@
     </div>
   </div>
 </footer>
+
 <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 const view = document.querySelector('.latest__view');
 const track = document.querySelector('.latest__track');
-
 if (view && track) {
   track.innerHTML += track.innerHTML;   
 
@@ -9,7 +8,6 @@ if (view && track) {
   let paused = false;
   view.addEventListener('mouseenter', () => paused = true);
   view.addEventListener('mouseleave', () => paused = false);
-
   function loop() {
     if (!paused) {
       view.scrollTop += 1;                      
@@ -42,3 +40,5 @@ const openBtn = document.getElementById('openSubscribe');
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) overlay.classList.remove('active');
   });
+
+
